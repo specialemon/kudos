@@ -1,0 +1,46 @@
+button {
+    display: block;
+    margin: auto auto;
+}
+
+.giveKudoBox {
+    height: 200px;
+    display: flex;
+    border: 2px solid teal;
+    border-radius: 15px;
+}
+.headBar {
+    display: flex;
+    height: 100px;
+}
+
+.header {
+    margin: auto auto;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.eachKudo {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.kudoTitle, .kudoBody, .sender, .receiver {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.sender, .receiver {
+    font-size: 20px;
+}
+
+.kudoBody {
+    font-size: 20px;
+}
+
