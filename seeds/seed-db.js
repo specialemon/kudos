@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://specialemon:199199@cluster0-qskyf.mongodb.net/test?retryWrites=true"||'mongodb://localhost/kudoApp', { useNewUrlParser: true, useMongoClient: true }).then(function(){
+mongoose.connect("mongodb+srv://specialemon:199199@cluster0-qskyf.mongodb.net/test?retryWrites=true", { useNewUrlParser: true, useMongoClient: true }).then(function(){
   console.log("connected to db");
 });
 
 const User = require('../models/User');
 const Event = require('../models/Kudo');
 
-User.collection.drop();
-Kudo.collection.drop();
+User.deleteMany();
+Kudo.deleteMany();
 
 User.create([{
     Name: "Leon"
