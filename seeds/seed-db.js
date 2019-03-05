@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/kudoApp', { useNewUrlParser: true }).then(function () {
-    console.log("connected to db");
+mongoose.connect("mongodb+srv://specialemon:199199@cluster0-qskyf.mongodb.net/test?retryWrites=true"||'mongodb://localhost/kudoApp', { useNewUrlParser: true, useMongoClient: true }).then(function(){
+  console.log("connected to db");
 });
 
 const User = require('../models/User');
